@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+      <% for (let msg of messages) { %>
+        <li>Message: <%= msg.text %>, User: <%= msg.user %>, Added: <%= msg.added %></li>
+        <% }; %>
+    </ul>
+
+    <a href="/new">Add a message</a>
+  </body>
+</html>
